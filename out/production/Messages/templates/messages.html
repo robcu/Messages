@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
+</head>
+<body>
+
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Enter your message" name="message"/>
+    <button type="submit">Submit</button>
+</form>
+Messages:
+<ol>
+    {{#messages}}
+    <li>{{.}}</li>
+    {{/messages}}
+</ol>
+
+</body>
+</html>
